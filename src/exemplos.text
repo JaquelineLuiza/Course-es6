@@ -1,0 +1,89 @@
+/*
+class Matematica{
+    //A função statica não depende de nenhuma outra parte da classe
+
+    static soma(a, b){
+        return a + b;
+    }
+}
+console.log(Matematica.soma(1,2));
+
+class List {
+    constructor(){
+        this.data = [];
+    }
+
+    add(data) {
+        this.data.push(data);
+        console.log(this.data);
+    }
+}
+class TodoList extends List{
+    constructor(){
+        super();
+        this.usuario = 'Diego';
+    }
+
+    mostraUsuario() {
+        console.log(this.usuario);
+    }
+}
+
+const MinhaLista = new TodoList();
+
+document.getElementById('novotodo').onclick = function() {
+    MinhaLista.add('Novo todo');
+}
+MinhaLista.mostraUsuario();
+
+//REST
+function soma(...params) {
+    return params.reduce((total, nest) => total + nest);
+}
+console.log(soma(1, 3, 4));
+
+//SPREAD
+const usuario1 = {
+    nome: 'Diego',
+    idade: 23,
+    empresa: 'Rocketseat',
+};
+
+const usuario2 = {...usuario1, nome: 'Gabriel'};
+
+console.log(usuario2);
+*/
+//Template Literals
+/*
+const nome= "Diego";
+const idade = 23;
+
+console.log('Meu nome é ' + nome + ' e tenho ' + idade + ' anos');
+console.log(`Meu nome é ${nome} e tenho ${idade} anos`);
+*/
+//Object Short Syntax
+/*
+const nome = 'Diego';
+const idade = 23;
+
+const usuario = {
+    nome,
+    idade,
+    empresa: 'Rocketseat',
+};
+
+console.log(usuario);
+
+//Async/await
+const minhaPromise = () => new Promise((resolve, reject) => {
+    setTimeout(() => { resolve('OK') }, 2000);
+});
+
+//minhaPromise().then(response => {console.log(response);});
+
+async function executaPromise(){
+    console.log(await minhaPromise());
+}
+
+executaPromise();
+*/
